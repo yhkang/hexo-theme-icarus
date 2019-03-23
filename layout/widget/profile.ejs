@@ -11,7 +11,7 @@
 } %>
 <div class="card widget">
     <div class="card-content">
-        <nav class="level">
+        <nav class="level" style="margin-bottom:1rem">
             <div class="level-item has-text-centered">
                 <div>
                     <% if (get_config_from_obj(widget, 'avatar_rounded')) { %>
@@ -40,36 +40,36 @@
                 </div>
             </div>
         </nav>
-        <nav class="level is-mobile">
+        <nav class="level menu-list is-mobile" style="margin-bottom:1rem">
             <div class="level-item has-text-centered is-marginless">
-                <div>
+                <a href="<%- url_for('/archives/') %>">
                     <p class="heading">
                         <%= _p('common.post', post_count()) %>
                     </p>
                     <p class="title has-text-weight-normal">
                         <%= post_count() %>
                     </p>
-                </div>
+                </a>
             </div>
             <div class="level-item has-text-centered is-marginless">
-                <div>
+                <a href="<%- url_for('/categories/') %>">
                     <p class="heading">
                         <%= _p('common.category', category_count()) %>
                     </p>
                     <p class="title has-text-weight-normal">
                         <%= category_count() %>
                     </p>
-                </div>
+                </a>
             </div>
             <div class="level-item has-text-centered is-marginless">
-                <div>
+                <a href="<%- url_for('/tags/') %>">
                     <p class="heading">
                         <%= _p('common.tag', tag_count()) %>
                     </p>
                     <p class="title has-text-weight-normal">
                         <%= tag_count() %>
                     </p>
-                </div>
+                </a>
             </div>
         </nav>
         <div class="level">
