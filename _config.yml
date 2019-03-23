@@ -24,13 +24,13 @@ navbar:
     # Navigation bar menu links
     menu:
         Home: /
-        Archives: /archives
-        Categories: /categories
-        Tags: /tags
-        About: /about
+        Archives: /archives/
+        Categories: /categories/
+        Tags: /tags/
+        About: /about/
     # Navigation bar links to be shown on the right
     links:
-        Alpha Lxy GitHub:
+        AlphaLxy GitHub:
             icon: fab fa-github
             url: 'https://www.github.com/AlphaLxy'
 # Footer section link settings
@@ -43,14 +43,14 @@ footer:
         Attribution 4.0 International:
             icon: fab fa-creative-commons-by
             url: 'https://creativecommons.org/licenses/by/4.0/'
-        Alpha Lxy GitHub:
+        AlphaLxy GitHub:
             icon: fab fa-github
             url: 'https://www.github.com/AlphaLxy'
 # Article display settings
 article:
     # Code highlight theme
     # https://github.com/highlightjs/highlight.js/tree/master/src/styles
-    highlight: atom-one-light
+    highlight: github-gist
     # Whether to show article thumbnail images
     thumbnail: true
     # Whether to show estimate article reading time
@@ -168,7 +168,7 @@ widgets:
         position: left
     -
         # Widget name
-        type: category
+        type: archive
         # Where should the widget be placed, left or right
         position: left
     -
@@ -178,7 +178,7 @@ widgets:
         position: right
     -
         # Widget name
-        type: archive
+        type: category
         # Where should the widget be placed, left or right
         position: right
     #-
