@@ -32,7 +32,7 @@
                         <% if (typeof(link) === 'string') { %>
                         <%= name %>
                         <% } else { %>
-                        <i class="<%= link.icon %>"></i>
+                        <% for (let icon of (Array.isArray(link.icon) ? link.icon : [link.icon])) { %><i class="<%= icon %>"></i>&nbsp;<% } %>
                         <% } %>
                     </a>
                 </p>
