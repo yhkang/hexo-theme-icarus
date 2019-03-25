@@ -56,6 +56,8 @@ body, button, input, select, textarea
 .card
     border-radius: 4px
     box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)
+    &:hover
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.1)
     & + .card,
     & + .column-right-shadow
         margin-top: 1.5rem
@@ -128,6 +130,8 @@ img.thumbnail
         margin-top: 0
     .menu-list li ul
         margin-right: 0
+    .menu-list a
+        transition: background-color 0.3s ease-in-out
     .menu-list a.level
         display: flex
 
@@ -176,7 +180,7 @@ img.thumbnail
     .article-meta
         margin-bottom: 1.5rem !important
     .title
-        margin: 0.2rem 0 0.8rem
+        margin: 0 0 0.5rem
         .fas
             margin-right: 0.8rem
     .content
@@ -266,6 +270,8 @@ img.thumbnail
 
 .is-overflow-x-auto
     overflow-x: auto !important
+    &::-webkit-scrollbar
+        width:0 !important
 
 .is-flex-grow
     flex-grow: 1 !important
@@ -438,7 +444,7 @@ figure.highlight
 
 .post-copyright
     font-size: 1rem;
-    letter-spacing: 0.05rem
+    letter-spacing: 0.02rem
     margin: 2.5rem 0 0;
     padding: 1rem 1rem;
     border-left: 3px solid #FF1700;
