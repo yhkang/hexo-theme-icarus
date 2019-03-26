@@ -185,6 +185,11 @@ img.thumbnail
 .article
     .article-meta
         margin-bottom: 1.5rem !important
+        >:first-child
+            flex-wrap: wrap
+            width: 100%
+            >*
+                flex-grow: 0 !important
     .title
         margin: 0 0 0.5rem
         .fas
@@ -449,12 +454,13 @@ figure.highlight
         all: initial
 
 .post-copyright
-    font-size: 1rem;
+    font-size: 1rem
     letter-spacing: 0.02rem
-    margin: 2.5rem 0 0;
-    padding: 1rem 1rem;
-    border-left: 3px solid #FF1700;
-    background-color: #F9F9F9;
+    word-break: break-all
+    margin: 2.5rem 0 0
+    padding: 1rem 1rem
+    border-left: 3px solid #FF1700
+    background-color: #F9F9F9
 
 .article {counter-reset:section}
 .article h2{counter-reset:sub-section}
