@@ -26,7 +26,7 @@
 } %>
 <% let tocContent = buildToc(_toc(content)); if (tocContent !== undefined && tocContent !== ''){ %>
     <div class="card widget column-left is-sticky" id="toc">
-        <div class="card-content">
+        <div class="card-content" style="max-height:calc(100vh - 22px);overflow:scroll">
             <div class="menu">
                 <h3 class="menu-label">
                     <%= _p('widget.catalogue', Infinity) %>
